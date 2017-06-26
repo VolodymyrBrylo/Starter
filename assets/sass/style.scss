@@ -1,0 +1,26 @@
+@import "base/normalize";
+@import "tools/variables";
+@import "tools/mixin";
+
+//Vendor styles
+@import "vendor/jquery.fancybox";
+@import "vendor/owl.carousel";
+@import "vendor/animate";
+
+//Own styles
+@import "modulse/icomoon";
+@import "base/base";
+@import "base/fonts";
+@import "base/forms";
+@import "base/grid";
+@import "layout/layout";
+@import "layout/header";
+@import "layout/footer";
+@import "modulse/btn";
+@import "modulse/modals";
+@import "modulse/animation";
+@import "modulse/cms-content";
+@import "modulse/slider";
+@import "modulse/menu";
+
+

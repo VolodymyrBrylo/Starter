@@ -1,0 +1,116 @@
+
+a.btn, button.btn {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    box-shadow: none;
+    text-align: center;
+    color: $font;
+    transition: all 0.3s ease;
+    font: bold 16px/20px $bold;
+    border:0;
+    outline: none;
+
+    &:hover, &:focus, &:active {
+        outline: none;
+    }
+
+    &-blue {
+        background-color: $blue;
+        color: #fff;
+        border: 1px solid $blue;
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    &-blue-br {
+        background-color: transparent;
+        color: $blue;
+        border: 1px solid $blue;
+        &:hover {
+            background-color: $blue;
+            color: #fff;
+        }
+    }
+
+    &-white {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        &:hover {
+            background-color: #fff;
+            color: $blue;
+        }
+    }
+    &[disabled] {
+        cursor: not-allowed;
+    }
+
+    &.btn-dotted {
+        border: 0;
+        padding: 0;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 4px;
+            width: 100%;
+            bottom: -4px;
+            background-position: left top;
+            background-repeat: repeat-x;
+            background-size: auto 100%;
+        }
+        &.orange {
+            &:after {
+                background-image: url("../images/border.svg");
+            }
+            &:hover, &:focus, &:active {
+                color: $orange;
+            }
+        }
+        &.red {
+            &:after {
+                background-image: url("../images/border_red.svg");
+            }
+            &:hover, &:focus, &:active {
+                color: #e3060d;
+            }
+        }
+        &.grey {
+            &:after {
+                background-image: url("../images/border_grey.svg");
+            }
+            &:hover, &:focus, &:active {
+                color: $font-grey;
+            }
+        }
+        &.effi {
+            &:after {
+                background-image: url("../images/border_grey.svg");
+            }
+            &:hover, &:focus, &:active {
+                color: #686563;
+            }
+        }
+        &.green {
+            &:after {
+                background-image: url("../images/border_green.svg");
+            }
+            &:hover, &:focus, &:active {
+                color: $green;
+            }
+        }
+        &.blue {
+            &:after {
+                background-image: url("../images/border_blue.svg");
+            }
+            &:hover, &:focus, &:active {
+                color: $blue;
+            }
+        }
+    }
+
+}

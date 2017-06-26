@@ -1,0 +1,33 @@
+//Background Colors
+
+$orange: #ff6b00;
+$green: #86d91e;
+$blue: #0061bb;
+$grey: #6b7287;
+
+//Error colors
+$success: #75bb1d;
+$error : #ff214b;
+$warning: yellow;
+
+
+//Fonts Colors
+$font: #1b1f2d;
+$font-grey: #6b7287;
+
+//Hover colors
+$blue-h: #3c94f6;
+
+//Fonts
+$light: 'RobotoLight';
+$regular: 'RobotoRegular';
+$bold: 'RobotoBold';
+$ubuntu: 'UbuntuBold';
+
+
+$breakpoints: (
+        'xs': ( max-width: 750px ),
+        'sm': ( max-width: 960px ),
+        'md': ( max-width: 1200px ),
+        'lg': ( max-width: 1600px )
+);

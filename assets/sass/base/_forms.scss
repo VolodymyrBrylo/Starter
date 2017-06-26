@@ -1,0 +1,45 @@
+.form-group {
+  .input-group {
+    position: relative;
+    display: table;
+    &-btn {
+      width: 1%;
+      vertical-align: middle;
+      position: relative;
+      font-size:0;
+      white-space: nowrap;
+    }
+    .form-control {
+      position: relative;
+      width: 100%;
+      z-index: 2;
+      float: left;
+      display: table-cell;
+      margin: 0;
+    }
+  }
+
+  .form-control {
+    border: 1px solid $grey;
+
+  }
+
+
+}
+
+div.wpcf7 {
+  &-mail-sent {
+    &-ok {
+      color: $success;
+    }
+    &-ng {
+      color: $error;
+    }
+    &-validation-errors {
+      color: $error;
+    }
+    &-spam-blocked {
+      color: $warning;
+    }
+  }
+}
