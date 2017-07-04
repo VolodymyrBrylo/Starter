@@ -15,9 +15,17 @@
     <meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png"/>
     <meta name="twitter:card" content="summary_large_image"/>
 
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/apple-icon-57x57.png">
+    <?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) :?>
+        <?php if(get_field("site_favicon","options")): ?>
+            <link rel="icon" type="image/png" href="<?php the_field("site_favicon","options"); ?>" />
+        <?php endif; ?>
+    <?php endif;?>
 
 </head>
+
 <?php wp_head(); ?>
+
 <body <?php body_class($class); ?>>
+
+<?php get_template_part( 'head' ); ?>
 
