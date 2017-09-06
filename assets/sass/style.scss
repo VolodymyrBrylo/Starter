@@ -1,4 +1,3 @@
-@import "base/normalize";
 @import "tools/variables";
 @import "tools/mixin";
 
@@ -7,20 +6,26 @@
 @import "vendor/owl.carousel";
 @import "vendor/animate";
 
-//Own styles
-@import "modulse/icomoon";
+//Base styles
 @import "base/base";
 @import "base/fonts";
 @import "base/forms";
 @import "base/grid";
+@import "base/normalize";
+
+//Layout styles
 @import "layout/layout";
 @import "layout/header";
 @import "layout/footer";
+
+//Modulse styles
+@import "modulse/icomoon";
 @import "modulse/btn";
 @import "modulse/modals";
 @import "modulse/animation";
 @import "modulse/cms-content";
 @import "modulse/slider";
 @import "modulse/menu";
+
 
 

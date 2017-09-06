@@ -120,26 +120,9 @@
   }
 }
 
-
-
-@mixin font($size: false, $color: false, $font: 'Source Sans Pro', $weight: false, $lh:false) {
-  font-family: $font , Helvetica, Arial, sans-serif;
-  @if $size { font-size: calculateRem($size); }
-  @if $color { color: $color; }
-  @if $weight { font-weight: $weight; }
-  @if $lh { line-height: calculateRem($lh); }
-}
-
-@mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
-}
-
 @mixin clearfix {
   *zoom: 1;
+  clear: both;
   &:before,
   &:after {
     content: " ";
@@ -148,18 +131,6 @@
   &:after {
     clear: both;
   }
-}
-
-//Visual hide element
-%visuallyhidden {
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip: rect(0, 0, 0, 0);
-  position: absolute;
 }
 
 @mixin keyframes($animation-name) {
@@ -178,25 +149,4 @@
   @keyframes #{$animation-name} {
     @content;
   }
-}
-
-@mixin animation($str) {
-  -webkit-animation: #{$str};
-  -moz-animation: #{$str};
-  -ms-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};
-}
-
-@mixin truncateText($overflow: ellipsis){
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: $overflow;
-}
-
-//Cross browser opacity
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8
 }
